@@ -1,0 +1,63 @@
+# Introdução ao Git e ao Git Hub
+
+## Principais Comandos:
+
+git init 
+Cria um novo repositório (diretório) chamado ".git" que contém todos os arquivos necessários de seu repositório,
+um esqueleto de repositório Git. Neste ponto, nada em seu projeto é monitorado ainda.
+
+git clone
+Caso você queira obter a cópia de um repositório Git existente, REMOTO (GITHUB), 
+por exemplo, um projeto que você queira contribuir – o comando para isso é git clone,
+em vez de receber apenas uma cópia para trabalho, o Git recebe uma cópia completa de
+praticamente todos os dados que o servidor possui. 
+Cada versão, de cada arquivo no histórico do projeto é obtida por padrão quando você executa git clone.
+
+git add 
+Adicionar todos os arquivos/diretórios.
+
+git add <<nome_arquivo>>
+Adicionar um arquivo específico.
+
+git add <<nome_diretório>>
+Adicionar um diretório específico.
+
+git commit  -m ‘mensagem de commit’
+Armazena (salvar) o conteúdo atual do índice em um novo commit, juntamente com uma mensagem de registro do usuário que descreve as mudanças. 
+Exemplo de Mensagem: importante para registrar o que você está fazendo na operação ao salvar o código. 
+Histórico para ajudar a saber o que foi feito.
+
+git push
+Enviar (publicar) arquivos e diretórios para um repositório remoto. 
+Ao fazer isso as informações ficarão disponíveis no Servidor Remoto para outros colaboradores da equipe.
+O primeiro push de um repositório deve conter o nome do repositório remoto e o branch.
+
+git pull
+Atualizar repositório local de acordo com o repositório remoto. 
+ATUALIZAR OS ARQUIVOS NO BRANCH ATUAL
+
+git merge
+Juntar as informações entre Branchs (Master e Branch01).
+Ajuda, também, a resolver também situações de conflitos de informações que foram alteradas.
+
+git status
+Prover informações referentes ao estado atual do projeto / Repositório.
+Exemplos: se tem arquivos adicionado ou não, se os arquivos commitados, etc
+A principal ferramenta utilizada para determinar quais arquivos estão em quais estados. O comando lhe mostra em qual branch você se encontra.
+
+git log
+Fornece um histórico de alterações que ocorreram no repositório ao longo do tempo.  
+Exemplo: Mostra um Commit, que o realizou, que horas foi feito, qual o id, etc. 
+Depois que você tiver criado vários commits, ou se clonou um repositório com um histórico de commits existente, 
+você provavelmente vai querer ver o que aconteceu. 
+
+git branch <<nome da branch>>
+Cria uma nova ramificação (Ramo separado) o dentro da Git Master. Pode ser por área, projeto, aplicação, etc. 
+Pega todo o codebase do Master e criar uma área (remo) específico, independente de seu diretório principal.
+Um branch no Git é simplesmente um leve ponteiro móvel para um dos commits. 
+O nome do branch padrão no Git é master. Como você inicialmente fez commits, 
+você tem um branch principal (master branch) que aponta para o último commit que você fez. 
+Cada vez que você faz um commit ele avança automaticamente.
+O que acontece se você criar um novo branch?  Bem, isso cria um novo ponteiro para que você possa se mover. 
+Vamos dizer que você crie um novo branch chamado testing. 
+Você faz isso com o comando git branch: git branch testing
